@@ -2,114 +2,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my webpage</title>
+    <title>my new webpage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="myHeader">
-        <ul class="sidebar">
-            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-168-88-88 224-224-224-224 88-88 224 224 224-224 88 88-224 224 224 224-88 88-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-        </ul>
-        
-        <ul>
-            <li><a href="#">Globe</a></li>
-            <li class="hideOnMobile"><a href="#">Home</a></li>
-            <li class="hideOnMobile"><a href="#">Support</a></li>
-            <li class="hideOnMobile"><a href="#">About</a></li>
-            <li class="hideOnMobile"><a href="#">Services</a></li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M86-191v-126h788v126H86Zm0-226v-126h788v126H86Zm0-226v-126h788v126H86Z"/></svg></a></li>
-        </ul>
-    </nav>
-
-    <div class="aside" id="myAsidenav">
-        <a href=javascript:void(0) class="closebtn" style="font-size: 20px;"
-        onclick="closeNav()">&times;</a>
-        <a class="active" style="background-color: #f0f0f0;" href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Support</a>
-    </div>
-
-    <span style="font-size: 30px;cursor: pointer"
-    onclick="openNav()">&#9776;
-    </span>
-
-    <h1>THIS IS THE BEST MOMENT</h1>
-    <p>This is what i wanted to make it the responsive navbar.Finally, i made the webpage</p>
-
-     <div class="image">
-    <img src="Laptop image.webp">
-    </div>
-
-  <div class="container">
-    <form action="/action_page.php">
-      <div class="row">
-        <div class="col-25">
-          <label for="fname">First Name</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="lname">Last Name</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="country">Country</label>
-        </div>
-        <div class="col-75">
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="subject">Subject</label>
-        </div>
-        <div class="col-75">
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
-  </div>
-
-
-    <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
-
-    </script>
-
     
-<script>
-    function openNav(){
-        document.getElementById('myAsidenav').style.width="250px";
-    }
-    function closeNav(){
-        document.getElementById('myAsidenav').style.width="0";
-    }
-</script>
+    <h1>Login Form</h1><br>
+    <div class="form-container">
+    <form action="/action_page.php">
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br><br>
+        
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+        
+        <label for="mnumber">Mobile No :</label>
+        <input type="text" id="mnumber" name="mnumber" placeholder="Enter your mobile name"><br><br>
+        
+        <label for="gender">Gender :</label>
+        <input type="text" id="gender" name="gender" placeholder="Enter your gender"><br><br>
+        
+        <label for="email">E-mail id :</label>
+        <input type="text" id="email" name="email" placeholder="Enter your E-mail"><br><br>
+        
+        <label for="aadhaar">Aadhaar No :</label>
+        <input type="text" id="aadhaar" name="aadhaar" placeholder="Enter your Aadhaar No."><br><br>
+        
+        <label for="pan">PAN No :</label>
+        <input type="text" id="pan" name="pan" placeholder="Enter your pancard No."><br><br>
+    <input type="submit" id="submit">
+    </form>
+    </div>
 </body>
 </html>
